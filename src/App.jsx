@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import TodoForm from './components/TodoForm.jsx';
-import TodoList from './components/TodoList.jsx';
+import TodoForm from 'src\components\TodoForm.jsx';
+import TodoList from 'src\components\TodoList.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
