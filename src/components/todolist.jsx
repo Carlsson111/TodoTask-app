@@ -1,16 +1,18 @@
 import React from 'react';
-import TodoItem from 'src\components\TodoItem.jsx';
+import TodoItem from './TodoItem.jsx';
 function TodoList({ todos, toggleDone }) {
   if (todos.length === 0) {
     return <p className="text-muted">No tasks yet.</p>;
   }
 
   return (
-    <div id="todo-list-container">
+    <ul className="list-group">
       {todos.map((todo, index) => (
-        <TodoItem key={index} todo={todo} index={index} toggleDone={toggleDone} />
+        <li className="list-group-item" key={index}>
+          <TodoItem todo={todo} index={index} toggleDone={toggleDone} />
+        </li>
       ))}
-    </div>
+    </ul>
   );
 }
 
