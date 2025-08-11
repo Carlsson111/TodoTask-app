@@ -11,7 +11,7 @@ function Sidebar() {
         </div>
         <ul
           className="nav nav-pills flex-column mb-auto flex-grow-1"
-          style={{ marginTop: "62px" }} // 2 cm ≈ 76px
+          style={{ marginTop: "62px" }}
         >
           <li className="nav-item mb-2">
             <a className="nav-link d-flex align-items-center" href="#">
