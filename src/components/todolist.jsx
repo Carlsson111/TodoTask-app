@@ -4,7 +4,7 @@ function TodoList({ todos, toggleDone, deleteTodo, startEdit, showDone, showAll,
   const displayedTodos = filterDone ? todos.filter(t => t.done) : todos;
 
   return (
-    <div className="p-4 mt-4 bg-white rounded-3 shadow-sm border">
+    <div className="p-4 mt-4 bg-secondary-subtle rounded-3 shadow-sm border">
       <div className="d-flex justify-content-between align-items-center mb-3">
         <h4 className="mb-0">Todos</h4>
         <div className="d-flex gap-2">
@@ -24,7 +24,7 @@ function TodoList({ todos, toggleDone, deleteTodo, startEdit, showDone, showAll,
         )}
 
       {displayedTodos.map((todo, index) => (
-        <div key={index} className="border rounded p-2 mb-2 d-flex justify-content-between align-items-center">
+        <div key={index} className="border rounded bg-white  p-2 mb-2 d-flex justify-content-between align-items-center">
           <div>
             <h6 className={todo.done ? "text-decoration-line-through" : ""}>{todo.title}</h6>
             {todo.description && <p className="mb-1">{todo.description}</p>}

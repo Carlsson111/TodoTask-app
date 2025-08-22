@@ -5,6 +5,7 @@ import TodoForm from "./components/TodoForm";
 import TodoList from "./components/TodoList";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
+import "./App.css";
 
 function App() {
   const [todos, setTodos] = useState([]);

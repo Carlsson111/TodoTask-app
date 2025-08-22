@@ -1,17 +1,26 @@
 import React from "react";
+import brandLogo from "../assets/Carlssonbrand.png";
+
 
 function Sidebar() {
   return (
     <aside className="sidebar d-flex flex-column justify-content-between bg-light min-vh-100 p-3 border-end">
       <div>
         <div className="d-flex align-items-center mb-4">
-          <a className="navbar-brand me-2" href="#">
-            My Todo App
-          </a>
+          <div className="flex-grow-1 d-flex align-items-center">
+            <img
+              src={brandLogo}
+              alt="logo"
+              className="me-2"
+              style={{ width: "80px", height: "80px" }}
+            />
+            <span className="fw-bold">My Todo App</span>
+          </div>
         </div>
+        <hr className="my-2 border-2 border-primary" />
         <ul
           className="nav nav-pills flex-column mb-auto flex-grow-1"
-          style={{ marginTop: "62px" }}
+          
         >
           <li className="nav-item mb-2">
             <a className="nav-link d-flex align-items-center" href="#">

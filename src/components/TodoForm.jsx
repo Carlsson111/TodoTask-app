@@ -44,7 +44,7 @@ function TodoForm({ onSubmit, initialValues, cancelEdit }) {
       : "";
 
   return (
-    <div className="p-4 bg-white rounded-3 shadow-sm border">
+    <div className="p-4 bg-secondary-subtle rounded-3 shadow-sm border">
       <form onSubmit={handleSubmit(submitForm)}>
         <div className="mb-3">
           <label className="form-label">Title</label>
@@ -61,7 +61,7 @@ function TodoForm({ onSubmit, initialValues, cancelEdit }) {
           <textarea
             className="form-control"
             {...register("description")}
-            rows={3}
+            rows={4}
           ></textarea>
         </div>
 
